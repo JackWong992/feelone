@@ -1,0 +1,19 @@
+{
+  "name": "feelone",
+  "version": "1.0.0",
+  "description": "这是一个UI框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackWong992/feelone.git"
+  },
+  "author": "huangfl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackWong992/feelone/issues"
+  },
+  "homepage": "https://github.com/JackWong992/feelone#readme"
+}
