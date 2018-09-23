@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JackWong992/feelone/issues"
   },
-  "homepage": "https://github.com/JackWong992/feelone#readme"
+  "homepage": "https://github.com/JackWong992/feelone#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
 }
