@@ -18,5 +18,8 @@
   "homepage": "https://github.com/JackWong992/feelone#readme",
   "dependencies": {
     "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
   }
 }
