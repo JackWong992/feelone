@@ -5,9 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>feelone ui</title>
     <style>
-        *{margin: 0;padding: 0;box-sizing: border-box;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         :root {
             --button-height: 32px;
             --font-size: 14px;
@@ -18,45 +23,36 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
+
         #app {
             margin: 20px;
         }
+
+        body {
+            font-size: var(--font-size);
+        }
     </style>
     <style>
-        .g-button{
-            font-size: var(--font-size);
-            height: var(--button-height);
-            padding: 0 1em;
-            font: inherit;
-            border-radius: var(--border-radius);
-            border: 1px solid var(--border-color);
-            background: var(--button-bg);
-        }
-        .g-button:hover {
-            border-color: var(--border-color-hover);
-        }
-        .g-button:active {
-            background-color: var(--button-active-bg);
-        }
-        .g-button:focus {
-            outline: none;
+        .icon {
+            width: 1em;
+            height: 1em;
         }
     </style>
 </head>
-    <div id="app">
-        <g-button>{{message}}</g-button>
-    </div>
-<body>
-<script src="./node_modules/vue/dist/vue.min.js"></script>
-<script src="./button.js"></script>
-<script>
-    var app = new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue'
-        }
-    })
 
-</script>
+<body>
+<div id="app">
+    <g-button icon="settings">
+        设置
+    </g-button>
+    <g-button icon="settings" icon-position="right">
+        设置
+    </g-button>
+    <g-button icon="settings">
+        设置
+    </g-button>
+</div>
+<script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_849834_lqyb2k35p3l.js"></script>
 </body>
 </html>
