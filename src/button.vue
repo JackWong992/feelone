@@ -1,8 +1,6 @@
 <template>
     <button class="g-button" :class="{[`icon-${iconPosition}`]: true}">
-        <svg class="icon" v-if="icon">
-            <use  v-bind:xlink:href="`#i-${icon}`"></use>
-        </svg>
+        <g-icon :name="icon" v-if="icon"></g-icon>
         <div class="content">
             <slot></slot>
         </div>
@@ -10,7 +8,20 @@
 </template>
 <script>
     export  default  {
-        props:['icon','iconPosition']
+        props:{
+            icon: {},
+            iconPosition: {
+                type: String,
+                default: 'left',
+                validate(value){
+                    if( value !== 'left' && value !=='right'){
+                        return false
+                    }else{
+                        return true
+                    }
+                }
+            }
+        }
     }
 </script>
 
